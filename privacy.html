@@ -18,7 +18,7 @@ svg{flex:none}
 <header><svg width="28" height="28" viewBox="0 0 64 64" aria-hidden="true"><g fill="#1A7A8C" stroke="#1A7A8C"><rect x="6" y="12" width="9" height="40" rx="4.5" stroke="none"/><rect x="49" y="12" width="9" height="40" rx="4.5" stroke="none"/><path d="M10.5 24 C 10.5 37, 17.5 42.5, 22 42.5 C 27 42.5, 28.5 32.5, 32 28.5 C 35.5 32.5, 37 42.5, 42 42.5 C 46.5 42.5, 53.5 37, 53.5 24" fill="none" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/></g></svg><a href="index.html">Weir</a>
 <nav><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="support.html">Support</a></nav></header>
 <main><h1>Weir — Privacy Policy</h1>
-<p><strong>Effective date:</strong> 3 October 2026
+<p><strong>Effective date:</strong> 18 October 2026
 <strong>Developer:</strong> Novemade (Burak Yılmaz), İstanbul, Türkiye
 <strong>Contact:</strong> info@novemade.com</p>
 <p>Weir is a digital-wellbeing app for iPhone and Android that lets you keep Instagram and YouTube while turning off the surfaces you choose (Reels, Explore, Shorts, the Home feed). It is built so that it cannot learn much about you. This policy explains exactly what the app touches, what it stores, and what it never does.</p>
@@ -26,7 +26,8 @@ svg{flex:none}
 <p>Weir has no sign-up and no login. We do not operate a backend for the app. Your rules, schedules, allowances, streaks and statistics are stored only on your device, in the app's private storage. Deleting the app deletes them. You can also erase everything from <strong>Settings → Erase everything</strong>, or export a copy as a JSON file from <strong>Settings → Export my data</strong>.</p>
 <h2>2. What the app reads on your device, and why</h2>
 <h3>Android — Accessibility service</h3>
-<p>With your explicit consent in the app, Weir registers an Android accessibility service bound <strong>only</strong> to the Instagram and YouTube apps. The service receives window-change events from those two apps and inspects the identifiers and class names of the on-screen layout to decide whether a surface you turned off (for example the Reels viewer or the Shorts player) is visible. When it is, Weir sends the system Back action and shows its own intention screen.</p>
+<p>With your explicit consent in the app, Weir registers an Android accessibility service bound <strong>only</strong> to the Instagram and YouTube apps. The service receives window-change and tap events from those two apps and inspects the on-screen layout: the identifiers of its elements, their size and visibility, and the accessibility labels of navigation elements such as the bottom tabs (for example “Reels”, “Shorts” or “Subscriptions”), including the label of a tab you tap. It compares these against a fixed list to decide whether a surface you turned off (for example the Reels viewer or the Shorts player) is visible.</p>
+<p>When it is, Weir takes one of three actions on your behalf: it sends the system Back action and shows its own intention screen; for YouTube’s Home feed, it taps YouTube’s Subscriptions tab instead, so you stay in the app without the feed; and when you have paused Instagram or YouTube, or used up its daily allowance, it sends the system Home action and shows its intention screen. It performs no other actions in those apps.</p>
 <p>The service does <strong>not</strong> read, store or transmit message text, comments, captions, usernames, passwords, images or any other content. It records only: that a surface was blocked, which surface, and when; and how many seconds a surface or app was in the foreground. These counters stay on the device.</p>
 <p>The accessibility service is not an accessibility tool in the sense of Google Play's policy; it is used for the app's core feature, as disclosed in the app before you enable it.</p>
 <h3>Android — Usage access (optional)</h3>
@@ -43,7 +44,7 @@ svg{flex:none}
 <h2>5. Analytics and tracking</h2>
 <p>Weir contains no third-party analytics SDK and does not track you across apps or websites. A small set of first-use milestones (for example "protection enabled for the first time") is counted locally on your device and is never uploaded.</p>
 <h2>6. Children</h2>
-<p>Weir is intended for people aged 13 and over and does not knowingly collect personal data from children.</p>
+<p>Weir is intended for adults aged 18 and over; its target audience on Google Play is set to 18+. It is not directed at children and does not knowingly collect personal data from children.</p>
 <h2>7. Your rights</h2>
 <p>Because Weir does not hold personal data about you on any server, requests to access, correct or delete data are fulfilled directly on your device through the app's Export and Erase functions. For any question or request, write to info@novemade.com.</p>
 <h2>8. Changes</h2>
